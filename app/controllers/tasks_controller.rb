@@ -32,12 +32,13 @@ class TasksController < ApplicationController
 
   def destroy
     @task = Task.find(params[:id])
+    list_id = params[:list_id]
     @task.destroy
-    redirect_to list_path
+    redirect_to list_path(list_id)
   end
 
 private
   def task_params
-    params.require(:task).permit(:description)
+    params.require(:task).permit(:description, :done)
   end
 end
