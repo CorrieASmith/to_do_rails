@@ -1,4 +1,7 @@
 == README
+To_Do
+
+Corrie Smith & Chris Underwood, 10/12/2015
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -6,20 +9,25 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  2.2, Rails 4.2.4
 
 * System dependencies
+  postgresql,
 
 * Configuration
 
 * Database creation
 
+
 * Database initialization
+rake db:migrate
 
 * How to run the test suite
-
+rake db: configurations
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+Download from Github, run the 2 rakes and the application should appear in localhost:3000.
 
 * ...
 
