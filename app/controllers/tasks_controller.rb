@@ -1,4 +1,10 @@
 class TasksController < ApplicationController
+  def show
+    @list = List.find(params[:list_id])
+    @task = Task.find(params[:id])
+    redirect_to list_path(@task.list)
+  end
+  
   def new
     @list = List.find(params[:list_id])
     @task = @list.tasks.new
